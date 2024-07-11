@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importing Style and JS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/main.js"></script>  
+    
+    <title>Git Info</title>
+</head>
+<body>
+    <!-- Changable boxes -->
+    <div>
+
+        <!-- Submit box -->
+        <div  class="submitbox">
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>  
+            <button type="button" class="cancelbtn" onclick="submitBtn()">Submit</button>  
+            <button type="button" style="margin-left: auto;" class="cancelbtn" onclick="refresh()">Refresh</button>  
+            <img src="assets/octocat.png" alt="">
+            <p id="errorStatus">error status</p>
+        </div>
+
+        <!-- Info box -->
+        <div  class="infobox">
+            <!-- Image box -->
+            <img src="/assets/no-image.jpg" alt="" class="avatar" id="userImg">
+            <!-- Profile info -->
+            <h2 class="profilename" id="userFullName">Full Name</h2>
+            <!-- Personal info type -->
+            <div class="details" id="userInfo">
+                User information
+            </div>
+        </div>
+
+    </div>
+    <p class="footer">Developed by Pouya Mohmmadi</p>
+</body>
+</html>
